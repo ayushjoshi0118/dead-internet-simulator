@@ -1,0 +1,874 @@
+/* =====================================================
+   DEAD INTERNET SIMULATOR — FICTIONAL SITE STYLES
+   ===================================================== */
+
+/* ── AltaVault Search ────────────────────────────────── */
+.altavault-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.av-logo-block { text-align: center; margin-bottom: 2rem; padding-top: 2rem; }
+
+.av-logo-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2244aa;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: -1px;
+}
+
+.av-logo-vault { color: #cc4400; }
+
+.av-tagline { color: #556677; font-style: italic; margin-top: 0.25rem; }
+
+.av-search-box-ui {
+  background: #fff;
+  border: 2px solid #aabbcc;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.av-search-note { font-size: 0.8rem; color: #668; margin-bottom: 0.5rem; }
+.av-blurb { font-size: 0.85rem; color: #445; }
+
+.av-featured { margin-bottom: 1.5rem; }
+.av-featured h3 { color: #333; margin-bottom: 0.5rem; font-size: 0.95rem; }
+.av-featured-list { list-style: none; }
+.av-featured-list li { padding: 4px 0; border-bottom: 1px dotted #ccc; font-size: 0.85rem; }
+.av-featured-list li a { color: #0000cc; }
+
+.av-stats-bar {
+  font-size: 0.78rem;
+  color: #778899;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 6px;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.av-secret-stat { color: #669966; }
+
+.av-categories { margin-bottom: 1.5rem; }
+.av-categories h3 { color: #333; margin-bottom: 0.75rem; }
+
+.av-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.av-cat-grid a {
+  display: block;
+  background: #e8e4d8;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #334;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.av-cat-grid a:hover { background: #ddd; text-decoration: underline; }
+
+.av-footer-note { font-size: 0.7rem; color: #889; text-align: center; margin-top: 2rem; }
+
+/* ── Hollow Webring ──────────────────────────────────── */
+.hollow-wrapper {
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+
+.hollow-header { text-align: center; margin-bottom: 1rem; }
+.hollow-title { font-size: 1.5rem; font-weight: bold; letter-spacing: 4px; color: #33ff33; text-shadow: 0 0 10px #33ff33; }
+.hollow-subtitle { font-size: 0.85rem; color: #22aa22; letter-spacing: 2px; margin-top: 4px; }
+
+.hollow-blink {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #66ff66;
+  margin-bottom: 1rem;
+  animation: blink 1.5s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.hollow-intro {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  font-size: 0.85rem;
+  color: #22cc22;
+  line-height: 1.6;
+}
+
+.hollow-intro p { margin-bottom: 0.5rem; }
+
+.hollow-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin-bottom: 1.5rem;
+}
+
+.hollow-table th {
+  background: #001a00;
+  color: #44ff44;
+  padding: 6px 10px;
+  text-align: left;
+  border: 1px solid #1a3a1a;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.hollow-table td {
+  padding: 5px 10px;
+  border: 1px solid #0a2a0a;
+  color: #22cc22;
+}
+
+.hollow-table tr:hover td { background: #001500; }
+
+.node-09-row td { color: #ffff44 !important; font-weight: bold; }
+
+.hollow-table a { color: #33ff33; }
+
+.status-active { color: #44ff44 !important; font-weight: bold; }
+.status-dark { color: #558855 !important; opacity: 0.6; }
+.status-frozen { color: #4488ff !important; font-style: italic; }
+
+.hollow-footer { font-size: 0.75rem; color: #22aa22; margin-top: 1rem; }
+.hollow-note { color: #aa9922; margin-top: 0.5rem; font-style: italic; }
+
+/* ── GeoCitiez ────────────────────────────────────────── */
+.geocit-wrapper { min-height: 100vh; }
+
+.geocit-banner {
+  background: #ff00ff;
+  color: #ffff00;
+  text-align: center;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  border: 3px solid #00ffff;
+  margin-bottom: 4px;
+  animation: rainbow-bg 3s infinite;
+}
+
+@keyframes rainbow-bg {
+  0%   { background: #ff00ff; }
+  25%  { background: #0000ff; }
+  50%  { background: #00aa00; }
+  75%  { background: #cc0000; }
+  100% { background: #ff00ff; }
+}
+
+.geocit-construction {
+  background: repeating-linear-gradient(
+    -45deg, #000, #000 5px, #ffcc00 5px, #ffcc00 10px
+  );
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.geocit-content { padding: 4px; }
+
+.geocit-layout { width: 100%; border-collapse: collapse; }
+.geocit-layout td { vertical-align: top; padding: 8px; }
+
+.geocit-sidebar {
+  width: 200px;
+  background: #000033;
+  border: 2px solid #00ffff;
+  font-size: 0.8rem;
+}
+
+.geocit-sidebar h3 { color: #00ffff; margin-bottom: 6px; }
+.geocit-sidebar ul { list-style: disc; padding-left: 1rem; color: #ffff00; }
+.geocit-sidebar ul li { margin-bottom: 4px; }
+.geocit-sidebar a { color: #00ff00; }
+.geocit-sidebar hr { border-color: #00ffff; margin: 8px 0; }
+
+.geocit-guestbook { font-size: 0.75rem; }
+.geocit-guestbook h3 { color: #ff00ff; margin-bottom: 6px; }
+.geo-guest-entry {
+  background: #000066;
+  border: 1px solid #00ffff;
+  padding: 4px;
+  margin-bottom: 6px;
+  font-size: 0.72rem;
+  color: #ccccff;
+}
+
+.geocit-main { background: #000066; color: #ffff00; font-size: 0.85rem; }
+.geocit-main h1 { color: #ff00ff; font-size: 1.2rem; margin-bottom: 8px; }
+.geocit-main h2 { color: #00ffff; font-size: 0.95rem; margin-bottom: 6px; margin-top: 12px; }
+.geocit-main a { color: #00ff00; }
+
+.geocit-divider { border-color: #ffff00; margin: 8px 0; }
+
+.geocit-update {
+  background: #000033;
+  border-left: 3px solid #ff00ff;
+  padding: 6px;
+  margin-bottom: 8px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.geocit-footer {
+  background: #000033;
+  color: #888888;
+  text-align: center;
+  padding: 6px;
+  font-size: 0.7rem;
+  border-top: 2px solid #00ffff;
+}
+
+/* ── USENET Mirror ────────────────────────────────────── */
+.usenet-wrapper { padding: 12px; min-height: 100vh; font-size: 0.83rem; }
+
+.usenet-header {
+  background: #d0d0c8;
+  border: 2px inset #aaa;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.78rem;
+}
+
+.usenet-logo { font-weight: bold; font-size: 0.9rem; color: #222; }
+.usenet-group { color: #0000aa; font-size: 0.8rem; }
+.usenet-meta { color: #666; font-size: 0.72rem; }
+
+.usenet-notice {
+  background: #fff8cc;
+  border: 1px solid #cc9900;
+  padding: 5px 8px;
+  font-size: 0.78rem;
+  color: #665500;
+  margin-bottom: 12px;
+}
+
+.usenet-threads { display: flex; flex-direction: column; gap: 12px; }
+
+.usenet-thread {
+  border: 1px solid #aaa;
+  background: #f8f8f4;
+}
+
+.usenet-thread-header {
+  background: #d8d8cc;
+  padding: 4px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #bbb;
+}
+
+.thread-subject { font-weight: bold; color: #000066; }
+.thread-author { color: #006600; }
+.thread-date { color: #666; margin-left: auto; }
+
+.usenet-post {
+  padding: 10px 12px;
+  line-height: 1.6;
+  font-size: 0.82rem;
+  color: #111;
+  white-space: pre-wrap;
+}
+
+.usenet-cipher { background: #e8f0e8; border: 1px dashed #aaccaa; padding: 4px 8px; display: inline-block; margin-top: 4px; }
+.cipher-text { color: #cc0000; letter-spacing: 2px; font-size: 1rem; }
+
+.usenet-footer { margin-top: 16px; font-size: 0.72rem; color: #778; border-top: 1px solid #ccc; padding-top: 8px; }
+
+/* ── Marcus Blog ──────────────────────────────────────── */
+.blog-wrapper { max-width: 720px; margin: 0 auto; padding: 1.5rem; min-height: 100vh; }
+
+.blog-header { border-bottom: 2px solid #8B7355; padding-bottom: 0.75rem; margin-bottom: 1rem; }
+.blog-title { font-size: 1.8rem; color: #3a2a1a; margin-bottom: 4px; }
+.blog-subtitle { color: #778; font-size: 0.88rem; font-style: italic; }
+
+.blog-nav {
+  font-size: 0.8rem;
+  color: #889;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.blog-nav a { color: #6688aa; }
+
+.blog-posts { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.blog-post {
+  border: 1px solid #d4c8b0;
+  border-left: 4px solid #8B7355;
+  padding: 1rem;
+  background: #fffdf5;
+}
+
+.blog-post--old { opacity: 0.7; }
+
+.post-title { font-size: 1.15rem; color: #3a2a1a; margin-bottom: 4px; }
+.post-date { font-size: 0.75rem; color: #999; margin-bottom: 0.75rem; font-family: 'Courier New', monospace; }
+
+.post-body p { margin-bottom: 0.75rem; line-height: 1.7; font-size: 0.88rem; }
+.post-body a { color: #5577aa; }
+
+/* The hidden word — styled to look like an emphasis, not a clue */
+.hidden-word {
+  background: #f0e8d0;
+  border: 1px solid #c4b090;
+  padding: 0 3px;
+  font-weight: bold;
+  font-style: italic;
+  color: #5a4030;
+  /* looks like it's just emphasized, the word itself IS the clue */
+}
+
+.blog-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d4c8b0;
+  font-size: 0.73rem;
+  color: #999;
+}
+
+/* ── Valdris Institute ────────────────────────────────── */
+.valdris-wrapper { min-height: 100vh; }
+
+.valdris-header {
+  background: linear-gradient(180deg, #12122a 0%, #0a0a1e 100%);
+  border-bottom: 2px solid #334;
+  padding: 1rem 1.5rem;
+}
+
+.valdris-logo { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem; }
+
+.valdris-v {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8899cc;
+  text-shadow: 0 0 15px #6677aa;
+  font-family: 'Palatino Linotype', serif;
+}
+
+.valdris-title { font-size: 1.1rem; letter-spacing: 4px; color: #aabbdd; }
+.valdris-subtitle { font-size: 0.8rem; color: #7788aa; letter-spacing: 2px; }
+.valdris-founded { font-size: 0.72rem; color: #556677; margin-top: 2px; }
+
+.valdris-nav {
+  font-size: 0.75rem;
+  color: #7788aa;
+  letter-spacing: 1px;
+}
+
+.valdris-nav span { cursor: pointer; }
+.valdris-nav span:hover { color: #aabbcc; }
+
+.valdris-restricted-link {
+  color: #cc8844 !important;
+  text-decoration: underline;
+}
+
+.valdris-content { padding: 1.5rem; }
+
+.valdris-mission {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.valdris-mission h2 { color: #8899cc; margin-bottom: 0.75rem; letter-spacing: 2px; font-size: 0.95rem; }
+.valdris-mission p { line-height: 1.7; font-size: 0.88rem; margin-bottom: 0.5rem; color: #c8c8e0; }
+.valdris-mission em { color: #aabbdd; }
+
+.valdris-phases h2 { color: #8899cc; margin-bottom: 1rem; letter-spacing: 2px; font-size: 0.95rem; }
+
+.phase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+
+.phase-card {
+  border: 1px solid #334;
+  padding: 1rem;
+  background: #0d0d20;
+}
+
+.phase-card h3 { font-size: 0.85rem; color: #aabbdd; margin-bottom: 4px; }
+.phase-card p { font-size: 0.78rem; color: #889; line-height: 1.5; margin-top: 4px; }
+.phase-card p:first-of-type { color: #6688aa; font-size: 0.72rem; font-family: 'Courier New', monospace; }
+.phase-complete { border-color: #335533; }
+.phase-sealed { border-color: #553333; }
+
+.valdris-staff h2 { color: #8899cc; margin-bottom: 0.75rem; letter-spacing: 2px; font-size: 0.95rem; }
+.valdris-staff p { font-size: 0.85rem; margin-bottom: 6px; }
+.valdris-staff a { color: #6688aa; }
+
+.valdris-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #334;
+  font-size: 0.72rem;
+  color: #556677;
+}
+
+/* ── Restricted Archive ───────────────────────────────── */
+.restricted-wrapper { padding: 1.5rem; min-height: 100vh; }
+
+.restricted-header { text-align: center; margin-bottom: 1.5rem; }
+
+.restricted-stamp {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff2200;
+  border: 2px solid #ff4444;
+  display: inline-block;
+  padding: 4px 16px;
+  margin-bottom: 1rem;
+}
+
+.restricted-header h1 { font-size: 1rem; color: #ff6666; letter-spacing: 2px; margin-bottom: 4px; }
+.restricted-auth { color: #44ff44; font-size: 0.75rem; }
+
+.restricted-content { max-width: 700px; }
+
+.restricted-content h2 {
+  color: #ff6644;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #330000;
+  padding-bottom: 4px;
+}
+
+.restricted-doc {
+  background: #050505;
+  border: 1px solid #330000;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doc-meta { font-size: 0.65rem; color: #554444; margin-bottom: 0.75rem; font-family: 'Courier New', monospace; border-bottom: 1px solid #330000; padding-bottom: 6px; }
+
+.restricted-doc h3 { color: #cc6644; font-size: 0.82rem; margin: 0.75rem 0 0.4rem; }
+.restricted-doc p { color: #ffcccc; font-size: 0.82rem; line-height: 1.6; margin-bottom: 0.5rem; }
+
+.restricted-response {
+  background: #1a0000;
+  border: 1px solid #551111;
+  padding: 1rem;
+  color: #ff8888 !important;
+  font-style: italic;
+  line-height: 1.8 !important;
+  letter-spacing: 1px;
+}
+
+.restricted-links { font-size: 0.8rem; }
+.restricted-links p { color: #cc6644; margin-bottom: 4px; }
+.restricted-links ul { list-style: none; }
+.restricted-links li { margin-bottom: 4px; }
+.restricted-links a { color: #ff8866; }
+
+/* ── CipheX Terminal ──────────────────────────────────── */
+.ciphex-wrapper { padding: 1rem; min-height: 100vh; }
+
+.ciphex-logo { font-size: 0.45rem; color: #00ff41; line-height: 1; margin-bottom: 0; overflow: hidden; }
+.ciphex-tagline { text-align: center; letter-spacing: 3px; font-size: 0.72rem; color: #22cc33; margin-bottom: 1.5rem; }
+
+.ciphex-docs h2 {
+  color: #00ff41;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin: 1.5rem 0 0.75rem;
+  border-bottom: 1px solid #0a2a0a;
+  padding-bottom: 4px;
+}
+
+.ciphex-doc-block {
+  background: #000a00;
+  border: 1px solid #0a2a0a;
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.ciphex-doc-block p { margin-bottom: 6px; }
+.ciphex-doc-block code { background: #001a00; padding: 1px 4px; color: #66ff66; }
+
+.ciphex-highlight {
+  background: #001500;
+  border: 1px solid #2a4a2a;
+  padding: 6px;
+  color: #44ff44;
+  border-left: 3px solid #00ff41;
+  font-size: 0.82rem;
+  margin: 8px 0;
+}
+
+.ciphex-example {
+  background: #000a00;
+  padding: 6px;
+  font-size: 0.75rem;
+  color: #22aa22;
+  margin-top: 8px;
+  border-top: 1px dashed #1a3a1a;
+}
+
+.ciphex-tool-note {
+  background: #000a00;
+  border: 1px solid #0a2a0a;
+  padding: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.ciphex-tool-note em { color: #22aa22; }
+.ciphex-tool-note ul { list-style: none; margin-top: 6px; }
+.ciphex-tool-note li { padding: 4px 0; border-bottom: 1px dotted #0a1a0a; }
+.ciphex-tool-note code { background: #001800; padding: 2px 6px; color: #66ff66; letter-spacing: 2px; }
+
+.ciphex-list { list-style: none; font-size: 0.78rem; color: #22aa22; }
+.ciphex-list li { padding: 4px 0; border-bottom: 1px dashed #0a2a0a; }
+.ciphex-list li::before { content: '> '; color: #00ff41; }
+
+.ciphex-footer { margin-top: 2rem; padding-top: 0.75rem; border-top: 1px solid #0a2a0a; font-size: 0.7rem; color: #22aa22; }
+.ciphex-footer a { color: #33ff33; }
+
+/* ── Daily Packet News ────────────────────────────────── */
+.news-wrapper { min-height: 100vh; }
+
+.news-masthead {
+  background: #222;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 4px double #888;
+}
+
+.news-name {
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.news-sub { font-size: 0.75rem; color: #aaa; letter-spacing: 2px; }
+.news-date { font-size: 0.7rem; color: #888; margin-top: 2px; }
+
+.news-columns {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 0;
+  padding: 1rem 1.5rem;
+}
+
+.news-main-col { padding-right: 1.5rem; border-right: 1px solid #ddd; }
+
+.news-article { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #ddd; }
+.news-article:last-child { border-bottom: none; }
+
+.news-lead h2 { font-size: 1.15rem; }
+
+.news-article h2 {
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.news-byline { font-size: 0.72rem; color: #888; font-style: italic; margin-bottom: 6px; }
+.news-article p { font-size: 0.83rem; line-height: 1.6; margin-bottom: 0.5rem; color: #222; }
+.news-article a { color: #0000cc; }
+
+/* Hidden word in news — styled as awkward, old-web underline */
+.hidden-word-news {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #cc0000;
+  color: inherit;
+  font-weight: bold;
+}
+
+.news-sidebar { padding-left: 1rem; font-size: 0.8rem; }
+.news-sidebar h3 { font-size: 0.8rem; color: #333; margin-bottom: 6px; border-bottom: 1px solid #ccc; padding-bottom: 3px; }
+.news-sidebar ul { list-style: none; margin-bottom: 1rem; }
+.news-sidebar li { padding: 3px 0; border-bottom: 1px dotted #ddd; }
+.news-sidebar a { color: #0000cc; font-size: 0.78rem; }
+
+.news-timeline { color: #666 !important; }
+.news-timeline li { font-size: 0.73rem !important; }
+.news-timeline li a { color: #0000cc !important; }
+
+.news-footer { padding: 0.75rem 1.5rem; border-top: 2px solid #ccc; font-size: 0.72rem; color: #888; }
+.news-footer a { color: #0000cc; }
+
+/* ── Room 404 ─────────────────────────────────────────── */
+.room404-wrapper { min-height: 100vh; display: flex; flex-direction: column; }
+
+.room404-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  padding: 6px 12px;
+}
+
+.room404-title { font-size: 0.9rem; color: #aaaaff; letter-spacing: 3px; font-weight: bold; }
+.room404-status { font-size: 0.68rem; color: #4488ff; }
+
+.room404-channel {
+  background: #111;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  color: #666;
+  border-bottom: 1px solid #222;
+}
+
+.room404-chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chat-message {
+  display: flex;
+  gap: 8px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-family: 'Courier New', monospace;
+}
+
+.chat-time { color: #444; flex-shrink: 0; min-width: 80px; }
+.chat-user { flex-shrink: 0; min-width: 120px; font-weight: bold; }
+.chat-user--ev { color: #6688ff; }
+.chat-user--pilgrim { color: #44cc88; }
+.chat-user--anon { color: #aa8844; }
+.chat-user--sys { color: #555; min-width: unset; font-style: italic; }
+.chat-text { color: #cccccc; }
+
+.chat-frozen { opacity: 0.5; font-style: italic; margin-top: 1rem; }
+
+.room404-input-frozen {
+  background: #111;
+  border: 1px solid #222;
+  margin: 0.75rem 1rem;
+  padding: 6px;
+  color: #333;
+  font-size: 0.72rem;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+
+.room404-footer {
+  padding: 6px 12px;
+  font-size: 0.68rem;
+  color: #333;
+  border-top: 1px solid #222;
+}
+
+.room404-footer a { color: #555; }
+
+/* ── Midnight Shrine ──────────────────────────────────── */
+.shrine-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.shrine-candles { font-size: 2rem; margin-bottom: 0.5rem; }
+.shrine-title { font-size: 2rem; letter-spacing: 5px; color: #cc88ff; text-shadow: 0 0 15px #9955cc; margin-bottom: 6px; }
+.shrine-subtitle { color: #aa88cc; font-size: 0.85rem; margin-bottom: 4px; letter-spacing: 1px; }
+.shrine-dedication { color: #886699; font-size: 0.8rem; font-style: italic; margin-bottom: 2rem; }
+
+.shrine-poem-section { margin-bottom: 2rem; }
+.shrine-poem-section h2 { color: #bb88ee; font-size: 0.9rem; letter-spacing: 3px; margin-bottom: 1rem; }
+
+.shrine-poem {
+  text-align: left;
+  display: inline-block;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 2;
+  color: #ccaaee;
+}
+
+.shrine-poem p { margin: 0; }
+
+/* Hidden word — styled as different color in poem, looks artistic */
+.shrine-hidden-word {
+  color: #ffff88;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 0 0 6px #aaaa00;
+}
+
+.shrine-testimony { margin-bottom: 2rem; text-align: left; }
+.shrine-testimony h2 { color: #bb88ee; font-size: 0.9rem; letter-spacing: 3px; margin-bottom: 1rem; text-align: center; }
+
+.shrine-quote {
+  border-left: 3px solid #6633aa;
+  background: #1a0a2a;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.83rem;
+  color: #ccaaee;
+  font-style: italic;
+  text-align: left;
+}
+
+.shrine-links { margin-bottom: 2rem; }
+.shrine-links h2 { color: #bb88ee; font-size: 0.9rem; letter-spacing: 3px; margin-bottom: 0.75rem; }
+.shrine-links ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.shrine-links li a { color: #9977cc; font-size: 0.85rem; }
+
+.shrine-footer { font-size: 0.7rem; color: #553366; margin-top: 2rem; line-height: 1.6; }
+.shrine-footer a { color: #7755aa; }
+
+/* ── Final Message ────────────────────────────────────── */
+.final-msg-wrapper { padding: 1.5rem; min-height: 100vh; }
+
+.final-msg-header { margin-bottom: 1.5rem; }
+.final-msg-stamp {
+  display: inline-block;
+  border: 2px solid #3355aa;
+  color: #5577cc;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.final-msg-meta {
+  font-size: 0.72rem;
+  color: #334466;
+  line-height: 1.6;
+}
+
+.final-msg-text {
+  white-space: pre-wrap;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: #aabbdd;
+  background: #070d14;
+  border: 1px solid #1a2a3a;
+  padding: 1.5rem;
+  max-width: 700px;
+}
+
+.final-msg-nav {
+  margin-top: 1.5rem;
+}
+
+.final-msg-nav a {
+  color: #4488ff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: 1px solid #336;
+  padding: 8px 16px;
+}
+
+.final-msg-nav a:hover { background: #0a1a2a; }
+
+/* ── The Endpoint ─────────────────────────────────────── */
+.endpoint-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.endpoint-intro { text-align: center; margin-bottom: 3rem; }
+
+.endpoint-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 8px;
+  color: #ffffff;
+  text-shadow: 0 0 30px #ffffff;
+  animation: pulse-white 3s ease-in-out infinite;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes pulse-white {
+  0%, 100% { text-shadow: 0 0 30px #ffffff, 0 0 60px #8888ff; }
+  50%       { text-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff; }
+}
+
+.endpoint-version { font-size: 0.65rem; color: #444; letter-spacing: 2px; }
+
+.endpoint-section {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #111;
+  padding-bottom: 2rem;
+}
+
+.endpoint-section h2 {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.endpoint-section p {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: #cccccc;
+  margin-bottom: 0.75rem;
+}
+
+.endpoint-quote {
+  border-left: 3px solid #333;
+  padding: 1rem 1.5rem;
+  background: #050505;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #eeeeee;
+  line-height: 1.8;
+  margin: 1rem 0;
+}
+
+.endpoint-signature {
+  color: #555 !important;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+.endpoint-credits p { color: #888 !important; }
+.endpoint-credits strong { color: #ffffff; }
+
+.endpoint-stats {
+  background: #111;
+  border: 1px solid #222;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  font-size: 0.78rem;
+  color: #888;
+  font-family: 'Courier New', monospace;
+}
+
+.endpoint-stats p { color: #888 !important; margin-bottom: 3px; }
+
+.endpoint-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.endpoint-footer a { color: #333; font-size: 0.8rem; letter-spacing: 2px; }
+.endpoint-footer a:hover { color: #666; }
